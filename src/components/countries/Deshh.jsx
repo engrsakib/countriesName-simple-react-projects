@@ -1,13 +1,17 @@
 import { useState } from "react";
 
-const Deshh = ({ desh, handlevistCont }) => {
+const Deshh = ({ desh, handlevistCont, handleVistFlag }) => {
   const { name, flags, area, population, cca3 } = desh;
 
   const [vis, setvis] = useState(false);
   const handelvis = () => {
     setvis(!vis);
   };
-//   console.log(handlevistCont);
+  const bothFunction = () =>{
+    handlevistCont(desh);
+    handleVistFlag(desh.flags.png)
+  }
+  //   console.log(handlevistCont);
   return (
     <div className="country">
       <h2>Name: {name.common}</h2>
@@ -15,7 +19,10 @@ const Deshh = ({ desh, handlevistCont }) => {
       <p>population: {population}</p>
       <p>area: {area}</p>
       <p>country code: {cca3}</p>
-      <button onClick={() => handlevistCont(desh)} className="btn btn-error m-3">
+      <button
+        onClick={bothFunction}
+        className="btn btn-error m-3"
+      >
         Mark as visited
       </button>
       <button
