@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .country{
+        @apply border-2 border-sky-500 m-4 rounded-md;
+    }
+}
