@@ -4,7 +4,7 @@
 
 @layer utilities{
     .country{
-        @apply border-2 border-sky-500 m-4 rounded-md;
+        @apply border-2 border-sky-500 m-4 rounded-md flex flex-col items-center justify-center;
     }
     .pb{
         @apply btn-primary;

@@ -9,7 +9,7 @@ const Deshh = ({ desh, handlevistCont, handleVistFlag }) => {
   };
   const bothFunction = () =>{
     handlevistCont(desh);
-    handleVistFlag(desh.flags.png)
+    handleVistFlag(desh.flags.png);
   }
   //   console.log(handlevistCont);
   return (
