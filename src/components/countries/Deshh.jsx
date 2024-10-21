@@ -8,8 +8,12 @@ const Deshh = ({ desh, handlevistCont, handleVistFlag }) => {
     setvis(!vis);
   };
   const bothFunction = () =>{
+    if(!vis){
     handlevistCont(desh);
-    handleVistFlag(desh.flags.png);
+    handleVistFlag(desh.flags.png); 
+    setvis(true); 
+    }
+    
   }
   //   console.log(handlevistCont);
   return (
